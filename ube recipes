@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Ube treats</title>
+
+    <div class="box">
+        <div class="flex-container"></div>
+        <div class="border-example">
+            This is the greatest Ube Website on planet earth
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+</head>
+<meta charset="UTF=8" />
+
+<body>
+   
+
+    </div>
+    
+    <ul>
+        <ul class="navbar">
+            <!----hamburger icon---->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Ube recipes.html">Ube Recipes</a></li>
+            <li><a href="#">Popular Ube shops</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+
+        <!--added recipes with links to pages and target to keep page-->
+        <main>
+            <h1>Ube Recipes</h1>
+
+            <ul>
+                <li><a href="https://www.siftandsimmer.com/ube-brochi-brownie-mochi/" target="_blank">Mochi Brownies</a>
+
+                    <p>Click video below to see recipe!</p>
+
+                </li>
+
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/8AvyspS5wm0"
+                    title="Chewy Ube Butter Mochi | Ube Mochi Brownies | Hawaiian Dessert" frameborder="8"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <li><a href="https://theunlikelybaker.com/ube-cupcakes-recipe-video/" target="_blank">Ube Cupcake</a>
+                </li>
+
+                <p>Click video below to see recipe!</p>
+
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/4sDM-LUDxx4"
+                    title="DELICIOUS UBE CUPCAKES WITH CHANTILLY FROSTING" frameborder="8"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <li><a href="https://rezelkealoha.com/ube-halo-halo/" target="_blank">Ube halo halo</a></li>
+
+                <p>Click video below to see recipe!</p>
+
+
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/BFDGuK9IqGA"
+                    title="How to make Halo Halo Using Ube Milkshake | Classic Pinoy Summer Favorite" frameborder="5"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+        </head>
+
+</body>
+
+</html>
