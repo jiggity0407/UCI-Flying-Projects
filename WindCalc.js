@@ -1,5 +1,5 @@
 function windCalulator(direction, runway, winds) {
- 
+  
   const header = "Headwind = ";
   let angleInDegrees = direction - runway;
   let angleInRadians = angleInDegrees * (Math.PI / 180);
@@ -12,7 +12,6 @@ function windCalulator(direction, runway, winds) {
   let cosineValueCw = Math.sin(angleInRadiansCw);
   let crossWindCw = Math.abs(winds * cosineValueCw);
 
-
   const tail = "Tailwind = ";
   let angleInDegreesTw = direction - runway;
   let angleInRadiansTw = angleInDegreesTw * (Math.PI / 180);
@@ -22,15 +21,17 @@ function windCalulator(direction, runway, winds) {
   if (direction === runway) {
     return (`${header}`) + Math.floor(headWind);
 
-  } else if(direction >= 30 && direction <= 59);
+  } else if(direction >= 30 && direction < 60){
     return (`${crosser}`) + Math.floor(crossWindCw) + " " + '\n' + (`${header}`) + Math.floor(headWind);
 
- //  + " " + '\n' + (`${header}`) + Math.floor(headWind) + " " + '\n' + (`${tail}`) + Math.floor(crossWindTw);
+  } else if(direction >= 60){
+    return (`${crosser}`) + Math.floor(crossWindCw);
 }
 
+}
+console.log(windCalulator(320, 260, 20));
 
-console.log(windCalulator(310, 260, 20));
-
+ //  + " " + '\n' + (`${header}`) + Math.floor(headWind) + " " + '\n' + (`${tail}`) + Math.floor(crossWindTw);
 
 
 
