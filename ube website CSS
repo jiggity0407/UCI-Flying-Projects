@@ -1,12 +1,12 @@
-body{
+body {
     font-size: 15px;
     font-style: oblique;
     font-family: 'Lucida Sans';
     background-color: rgb(173, 166, 173);
-    text-align: left;
+    background-image: url(https://th.bing.com/th/id/R.a22469c48e23f2fe78c05a9bf9dc2088?rik=ule1iJlvDH14Mw&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fglobe-transparent-png%2fglobe-transparent-png-19.png&ehk=7rVdFC3%2fZeaI%2fcOlpQrZal6vpyTUoyf69hhGXB2LNIU%3d&risl=&pid=ImgRaw&r=0);
 }
 
-.navbar{
+.navbar {
     list-style-type: none;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -20,9 +20,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.navbar li{
+.navbar li {
     list-style-type: none;
     font-display: black;
     margin: 0px;
@@ -31,70 +32,110 @@ body{
     background-color: purple(4, 4, 4);
     text-align: left;
     border-style: hidden;
+    border-radius: 10px;
     font-weight: bold;
     float: left;
-    
+
 }
 
-.navbar li a{
+.navbar li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     background-color: rgb(92, 128, 0);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 
-main h3{
+main h3 {
     font-size: 20px;
     text-decoration: underline;
 }
 
-main p{
-    align-items: end;
-    align-content: end;
-    font-size: 20px;
 
+h3 {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-h1{
+h1 {
     color: black;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: black;
+    text-transform: capitalize;
 }
 
-h2{
+h2 {
     color: rgb(4, 4, 4);
-    text-align: center; 
+    text-align: center;
 }
 
 
-ul{
-    color:azure;
+ul {
+    color: azure;
     font-variant: small-caps;
 }
 
-caption{
+caption {
     text-transform: uppercase;
     font-stretch: wider;
     font-style: normal;
 }
 
-li{
+li {
     font-size: 20px;
     padding: 10px 10px;
     font-weight: bold;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 50px 200px 100px;
+    grid-gap: 2em;
+}
+
+header,
+footer {
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-container>* {
+    background: rgb(117, 82, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+@media screen and (max-width: 760px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    header,
+    main,
+    aside,
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 
 /* media queries */
@@ -103,22 +144,27 @@ body {
         font-size: 14px;
     }
 }
+
 @media (min-width: 601px) and (max-width: 900px) {
     body {
         font-size: 16px;
     }
 }
+
 @media (min-width: 901px) {
     body {
         font-size: 18px;
     }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     img {
         width: 100%;
         height: auto;
     }
 }
+
 @media (orientation: landscape) {
     body {
         background-color: rgb(173, 166, 173);
@@ -126,24 +172,30 @@ body {
 }
 
 /* different units */
-.navbar li a{ 
+.navbar li a {
     width: 100px;
     height: 100px;
 }
 
 .navbar li a {
-    width: 75%; 
-    height: 45%; 
+    width: 75%;
+    height: 45%;
 }
 
 .box {
-    width: 1800;            /* Width of the content */
-    height: 150px;           /* Height of the content */
-    padding: 20px;           /* Padding around the content */
-    border: 2px black; /* Border around the padding */
-    border-style:groove;
-    margin: 30px;            /* Margin outside the border */
-    background-color:rgb(117, 82, 145); /* Background color of the content area */
+    width: 1800;
+    /* Width of the content */
+    height: 150px;
+    /* Height of the content */
+    padding: 20px;
+    /* Padding around the content */
+    border: 2px black;
+    /* Border around the padding */
+    border-style: groove;
+    margin: 30px;
+    /* Margin outside the border */
+    background-color: rgb(117, 82, 145);
+    /* Background color of the content area */
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -153,20 +205,99 @@ body {
     height: 100px;
     margin: 5px;
     padding: 5px;
-    border-width: 5px;  /* Common border width */
-    border-style:groove;  /* Default border style */
+    border-width: 5px;
+    /* Common border width */
+    border-style: groove;
+    /* Default border style */
     border-color: black;
     text-align: center;
-    line-height: 50px;  /* Vertically centering text */
+    line-height: 50px;
+    /* Vertically centering text */
 }
 
-.flex-container{
+.flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 5px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.btn { /* ----grid template animation----*/
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+
+.btn:hover {/* ----grid template animation----*/
+    transform: translateY(-20px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+.btn:focus { 
+    outline: 2px solid blue; /* Customize the focus indicator WCAG 2.1, Principle 2, Guideline 2.1 (Keyboard Accessible)*/ 
+}
+
+.animated-box { /*------multiple animation box-->*/
+    text-align: center;
+    border-style: dashed;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: relative;
+    animation: move 4s infinite, colorChange 4s infinite alternate, resize 4s infinite;
+}
+
+@keyframes move { /*------multiple animation box-->*/
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 200px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: lightblue;
+    }
+
+    50% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: lightblue;
+    }
+}
+
+@keyframes resize {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+    }
 }
