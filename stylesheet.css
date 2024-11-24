@@ -9,7 +9,7 @@ body {
 .navbar {
     list-style-type: none;
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     margin: 0;
     padding: 5px;
@@ -50,11 +50,6 @@ body {
 }
 
 
-main h3 {
-    font-size: 20px;
-    text-decoration: underline;
-}
-
 
 h3 {
     color: black;
@@ -66,6 +61,8 @@ h1 {
     color: black;
     text-align: center;
     text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px rgb(117, 82, 145);
 }
 
 h2 {
@@ -73,11 +70,6 @@ h2 {
     text-align: center;
 }
 
-
-ul {
-    color: azure;
-    font-variant: small-caps;
-}
 
 caption {
     text-transform: uppercase;
@@ -89,6 +81,7 @@ li {
     font-size: 20px;
     padding: 10px 10px;
     font-weight: bold;
+    list-style-type: square;
 }
 
 body {
@@ -119,6 +112,9 @@ footer {
     border: black;
     border-radius: 10px;
     border-style: groove;
+    font-size: 20px;
+    color: aliceblue;
+
 }
 
 @media screen and (max-width: 760px) {
@@ -211,7 +207,12 @@ footer {
     /* Default border style */
     border-color: black;
     text-align: center;
-    line-height: 50px;
+    line-height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 45px;
+    text-decoration: underline;
     /* Vertically centering text */
 }
 
@@ -226,7 +227,8 @@ footer {
 
 }
 
-.btn { /* ----grid template animation----*/
+.btn {
+    /* ----grid template animation----*/
     font-size: 1rem;
     font-weight: 700;
     padding: 0.5em 1em;
@@ -235,35 +237,41 @@ footer {
     transition: all 0.3s;
 }
 
-.btn:hover {/* ----grid template animation----*/
+.btn:hover {
+    /* ----grid template animation----*/
     transform: translateY(-20px);
     background-color: var(--clr-accent);
     color: var(--clr-light);
 }
 
-.btn:focus { 
-    outline: 2px solid blue; /* Customize the focus indicator WCAG 2.1, Principle 2, Guideline 2.1 (Keyboard Accessible)*/ 
+.btn:focus {
+    outline: 2px solid blue;
+    /* Customize the focus indicator WCAG 2.1, Principle 2, Guideline 2.1 (Keyboard Accessible)*/
 }
 
-.animated-box { /*------multiple animation box-->*/
+.animated-box {
+    /*------multiple animation box-->*/
     text-align: center;
-    border-style: dashed;
-    border-radius: 10px;
-    font-size: 20px;
-    width: 100px;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
     height: 100px;
-    background-color: lightblue;
+    background-color: rgb(117, 82, 145);
     position: relative;
-    animation: move 4s infinite, colorChange 4s infinite alternate, resize 4s infinite;
+    animation: move 6s infinite, colorChange 4s infinite alternate, resize 4s infinite;
 }
 
-@keyframes move { /*------multiple animation box-->*/
+@keyframes move {
+
+    /*------multiple animation box-->*/
     0% {
         left: 0;
     }
 
     50% {
-        left: 200px;
+        left: 250px;
     }
 
     100% {
@@ -273,7 +281,7 @@ footer {
 
 @keyframes colorChange {
     0% {
-        background-color: lightblue;
+        background-color: rgb(117, 82, 145);
     }
 
     50% {
@@ -281,7 +289,7 @@ footer {
     }
 
     100% {
-        background-color: lightblue;
+        background-color: rgb(117, 82, 145);
     }
 }
 
@@ -298,6 +306,6 @@ footer {
 
     100% {
         width: 100px;
-        height: 100px;
+        height: 150x;
     }
 }
