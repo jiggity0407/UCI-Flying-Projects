@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="eng">
+<meta charset="UTF=8" />
 
 <head>
-    <meta charset="UTF=8" />
-    <!-------internet explorer compatability mode-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-------set viewport----------->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/stylesheet.css" />
-<!---Changed title to be more descriptive for WCAG 2.1, Principle 2, Guideline 2.4 (at least 3 sub-sections)-->
-    <title>This is an ube specific website to share recipes and ube bakeries</title>
+    <title>Ube treats</title>
 
-</head>
-
-<body>
     <div class="box">
         <div class="flex-container"></div>
         <div class="border-example">
@@ -23,66 +14,66 @@
 
     </div>
 
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+</head>
+
+<body>
     <ul>
         <ul class="navbar">
-            <!----hamburger icon---->
             <li><a href="index.html">Home</a></li>
             <li><a href="Ube recipes.html">Ube Recipes</a></li>
             <li><a href="#">Popular Ube shops</a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#">FAQ</a></li>
         </ul>
-        <!---Created search box for users to find what they need for WCAG 2.1, Principle 2, Guideline 2.4 (at least 3 sub-sections)-->
-        <form action="index.html"> <label for="search">Search:</label> <input type="text" id="search"
-                name="search"> <button type="submit">Go</button> </form>
-
-        <h1>Welcome to Ube treats!</h1>
-
-
+        <!--added recipes with links to pages and target to keep page-->
+        <h1>Ube Recipes</h1>
 
         <div class="grid-container">
             <header>
-                This site provides you with ube recipe ideas & locations to shop
+                Below are videos of recipes!
             </header>
             <main>
-                Ube is a purple yam that orgininated in southeast asia, grown throughout
-                the phillipines and said to have originated from New Guinea via trade.
-                Ube has a nutty sweet potato like flavor and is usually purple. Because
-                of its sweet taste and bright color it is often used in desserts and baking.
-                The best place to buy local ube products is at your local filipino market.
-                Because ube can be hard to buy fresh, powders and extracts are available for
-                Cooking. Ube treats exist in the form of ice cream, cookies, cupcakes and even
-                donuts.
+                
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/8AvyspS5wm0"
+                    title="Chewy Ube Butter Mochi | Ube Mochi Brownies | Hawaiian Dessert" frameborder="8"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!--added transcript for video WCAG 2.1, Principle 1, Guideline 1.1-->
+                    <p>Transcript: [This is a chewy ube bar recipe video]</p>
+                    
+
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/4sDM-LUDxx4"
+                    title="DELICIOUS UBE CUPCAKES WITH CHANTILLY FROSTING" frameborder="8"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!--added transcript for video WCAG 2.1, Principle 1, Guideline 1.1-->
+                    <p>Transcript: [This is a chewy ube cupcake recipe video]</p>
+
+                <iframe width="250" height="180" src="https://www.youtube.com/embed/BFDGuK9IqGA"
+                    title="How to make Halo Halo Using Ube Milkshake | Classic Pinoy Summer Favorite" frameborder="5"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!--added transcript for video WCAG 2.1, Principle 1, Guideline 1.1-->
+                    <p>Transcript: [This is a chewy ube-halo-halo recipe video]</p>
+                    
             </main>
             <aside>
-                <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k/Photo/Recipes/2022-08-SAB-recipe-photos/Ube-Butter-Mochi-Bars"
-                    width="325" height="150" border="3px" class="center" alt="Ube-Butter-Mochi-Bar photo" />
-                <!----added alt for  WCAG 2.1, Principle 1, Guideline 1.1 -->
+                <ul>
+                <li><a href="https://www.siftandsimmer.com/ube-brochi-brownie-mochi/" target="_blank">Mochi Brownies</a>
+                <li><a href="https://theunlikelybaker.com/ube-cupcakes-recipe-video/" target="_blank">Ube Cupcake</a>
+                <li><a href="https://rezelkealoha.com/ube-halo-halo/" target="_blank">Ube halo halo</a></li>
+            </ul>
             </aside>
             <footer>
-                <!----added aria-label for  WCAG 2.1, Principle 1, Guideline 1.1 & WCAG 2.1, Principle 2, Guideline 2.1 (Keyboard Accessible)-->
-                <button class="btn" aria-pressed="false" onclick="toggleButton(this)">Sign up for emails</button>
-                <!-----added animated button to grid condtainer-->
+                Cotact us @ 111-111-1111
             </footer>
-
-
+    \
         </div>
 
 
-        <h3>Popular Ube shops in Las Vegas</h3>
+        </head>
 
-        <ul>
-            <li><a href="https://purplepotatolv.com/">Purplepotatolv</a></li>
-
-            <li><a href="https://www.cafe-86.com/">Cafe-86</a></li>
-
-            <li><a
-                    href="https://ubeliciousdesserts.com/password#:~:text=Absolutely!%20We%20highly%20recommend%20reheating%20our">Ubeliciousdesserts</a>
-            </li>
-        </ul>
-    </ul><!----added aria-label for  WCAG 2.1, Principle 1, Guideline 1.1 -->
-    <div class="animated-box" aria-label="Moving animation that says click here for discounts">Click here for discounts
-    </div> <!------multiple animation box-->
-    </main>
 
 </body>
 
