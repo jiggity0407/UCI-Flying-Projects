@@ -1,0 +1,378 @@
+body {
+    font-size: 15px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(173, 166, 173);
+    background-image: url(https://th.bing.com/th/id/R.a22469c48e23f2fe78c05a9bf9dc2088?rik=ule1iJlvDH14Mw&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fglobe-transparent-png%2fglobe-transparent-png-19.png&ehk=7rVdFC3%2fZeaI%2fcOlpQrZal6vpyTUoyf69hhGXB2LNIU%3d&risl=&pid=ImgRaw&r=0);
+}
+/*changed nav bar border and width module 8*/
+.navbar {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 20px; 
+    padding: 40px;
+    background-color: rgb(117, 82, 145);
+    background-blend-mode: darken;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar li {
+    list-style-type: none;
+    font-display: black;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: purple(4, 4, 4);
+    text-align: left;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Changed hover color to white*/
+.navbar li a:hover {
+    background-color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border-width: 20px;
+}
+
+h3 {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px rgb(117, 82, 145);
+}
+
+h2 {
+    color: rgb(4, 4, 4);
+    text-align: center;
+}
+
+
+caption {
+    text-transform: uppercase;
+    font-stretch: wider;
+    font-style: normal;
+}
+
+li {
+    font-size: 20px;
+    padding: 10px 10px;
+    font-weight: bold;
+    list-style-type: square;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 50px 200px 100px;
+    grid-gap: 2em;
+}
+
+header,
+footer {
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-container>* {
+    background: rgb(117, 82, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black;
+    border-radius: 10px;
+    border-style: groove;
+    font-size: 20px;
+    color: aliceblue;
+
+}
+
+
+@media (min-width: 768px){
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+    .menu li {
+        float: left;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color:blueviolet
+    }
+}
+@media screen and (max-width: 760px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    header,
+    main,
+    aside,
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+/* media queries */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        background-color: rgb(173, 166, 173);
+    }
+}
+
+/* different units */
+.navbar li a {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar li a {
+    width: 75%;
+    height: 25%;
+}
+
+.box {
+    width: 1800;
+    /* Width of the content */
+    height: 125px;
+    /* Height of the content */
+    padding: 25px;
+    /* Padding around the content */
+    border: 5px black;
+    /* Border around the padding */
+    border-style: solid;
+
+    margin: 10px;
+    /* Margin outside the border */
+    background-color: rgb(117, 82, 145);
+    /* Background color of the content area */
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.border-example {
+    width: 2000;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border-width: 5px;
+    /* Common border width */
+    border-style: groove;
+    /* Default border style */
+    border-color: black;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 45px;
+    text-decoration: underline;
+    /* Vertically centering text */
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.btn {
+    /* ----grid template animation----*/
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    /* ----grid template animation----*/
+    transform: translateY(-20px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+.btn:focus {
+    outline: 2px solid blue;
+    /* Customize the focus indicator WCAG 2.1, Principle 2, Guideline 2.1 (Keyboard Accessible)*/
+}
+
+.animated-box {
+    /*------multiple animation box-->*/
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(117, 82, 145);
+    position: relative;
+    animation: move 6s infinite, colorChange 4s infinite alternate, resize 4s infinite;
+}
+
+@keyframes move {
+
+    /*------multiple animation box-->*/
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 250px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: rgb(117, 82, 145);
+    }
+
+    50% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: rgb(117, 82, 145);
+    }
+}
+
+@keyframes resize {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        width: 100px;
+        height: 150x;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: rgb(117, 82, 145);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(117, 82, 145);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(117, 82, 145);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:rgb(117, 82, 145)
+}
