@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 100px 100px;
+    row-gap: 50px;
+    column-gap: 50px;
+    padding: 50px;
+}
+
+.grid-1 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+}
+
+.grid-2 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+}
+.grid-3 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+}
+
+.grid-4 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+}
+
+.grid-5 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+}
+
+.grid-6 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+}
+
+.grid-7 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+
+}
+.grid-8 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+}
+
+.grid-9 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+
+}
+
+.grid-10 {
+    background-color: rgb(21, 0, 255);
+    border: 1.5px darkslateblue;
+    border-color: azure;
+
+}
