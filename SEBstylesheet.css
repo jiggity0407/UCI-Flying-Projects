@@ -23,6 +23,7 @@ main,
 aside {
     padding-top: 24px;
     background-color: #adb5bd;
+    
 }
 
 nav {
@@ -82,14 +83,14 @@ section {
 }
 
 aside {
-    background-color: blue;
+    background-color:#F2F4F7;
 }
 
 
 h2 {
     font-size: 20px;
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .center {
@@ -99,7 +100,7 @@ h2 {
 }
 
 thead tr {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 h1 {
@@ -109,11 +110,26 @@ h1 {
 }
 
 h3{
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 
 .Notice{
     text-align: center;
     width: 35px;
+}
+
+aside h3{
+    font-size: 20px;
+    text-decoration: underline;
+    
+}
+
+.instructions2 {
+font-size: 15px;
+margin-left: 25px;
+}
+
+ul li{
+    margin-top: 10px;
 }
