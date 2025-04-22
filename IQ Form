@@ -1,0 +1,100 @@
+import { v4 as uuid } from 'uuid';
+
+export default function ConditionPlugin() {
+    return function install(openmct) {
+
+        openmct.types.addType('conditionSet', {
+            name: 'Condition Set',
+            key: 'conditionSet',
+            description: 'Monitor and evaluate telemetry values in real-time with a wide variety of criteria. Use to control the styling of many objects in Open MCT.',
+            creatable: true,
+            cssClass: 'icon-conditional',
+
+            form: [
+                {
+                    name: 'Name',
+                    control: 'textfield',
+                    key: 'name',
+                    required: true
+                },
+                {
+                    name: 'Description',
+                    control: 'textfield',
+                    key: 'description'
+                },
+                {
+                    name: 'Tag',
+                    control: 'textfield',
+                    key: 'tag'
+                }
+            ],
+
+            initialize: function (domainObject, formValues) {
+                domainObject.name = formValues.name;
+                domainObject.description = formValues.description;
+                domainObject.tag = formValues.tag;
+
+                domainObject.configuration = {
+                    conditionTestData: [],
+                    conditionCollection: [
+                        {
+                            isDefault: true,
+                            id: uuid(),
+                            configuration: {
+                                name: 'Default',
+                                output: 'Default',
+                                trigger: 'all',
+                                criteria: []
+                            }
+                        }
+                    ]
+                };
+            }
+        });
+
+        // 👇 Custom view provider
+        openmct.objectViews.addProvider({
+            key: 'conditionSet-form-view',
+            name: 'Condition Form',
+            canView: function (domainObject) {
+                return domainObject.type === 'conditionSet';
+            },
+            canEdit: function (domainObject) {
+                return true;
+            },
+            view: function (domainObject) {
+                let container;
+                return {
+                    show: function (el) {
+                        container = el;
+                        const form = document.createElement('form');
+                        form.innerHTML = `
+                            <div style="padding: 1em">
+                                <label>Name: <input type="text" value="${domainObject.name || ''}" /></label><br/><br/>
+                                <label>Description: <input type="text" value="${domainObject.description || ''}" /></label><br/><br/>
+                                <label>Tag: <input type="text" value="${domainObject.tag || ''}" /></label><br/><br/>
+                                <button type="submit">Save</button>
+                            </div>
+                        `;
+                        form.addEventListener('submit', (e) => {
+                            e.preventDefault();
+                            const [nameInput, descInput, tagInput] = form.querySelectorAll('input');
+                            domainObject.name = nameInput.value;
+                            domainObject.description = descInput.value;
+                            domainObject.tag = tagInput.value;
+
+                            openmct.objects.save(domainObject);
+                            alert('Values saved!');
+                        });
+
+                        container.appendChild(form);
+                    },
+                    destroy: function () {
+                        container.innerHTML = '';
+                    }
+                };
+            }
+        });
+
+    };
+}
